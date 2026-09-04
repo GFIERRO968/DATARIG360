@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desert Barrel | Barriles Asadores Premium — Emiratos Árabes Unidos</title>
+<meta name="description" content="Desert Barrel: barriles asadores y ahumadores premium, fabricados en acero inoxidable. Envíos en Emiratos Árabes Unidos. Precios en AED.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ SVG SPRITES (logo, barrel icon, etc. reused via <use>) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo-badge" viewBox="0 0 220 220">
+      <circle cx="110" cy="110" r="104" fill="#ecd9b3" stroke="#b9852f" stroke-width="5"/>
+      <circle cx="163" cy="54" r="13" fill="#d4a84b" opacity="0.9"/>
+      <path d="M28 156 C 60 145, 95 145, 110 152 C 130 160, 165 160, 192 150" fill="none" stroke="#c9ad7c" stroke-width="4" stroke-linecap="round"/>
+      <!-- Camel line-art -->
+      <g fill="none" stroke="#3a2414" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M34 100 C 28 109, 26 119, 31 128"/>
+        <path d="M34 100 C 40 90, 46 90, 50 84 C 55 70, 62 62, 68 66 C 71 56, 80 52, 84 60 C 90 56, 98 60, 96 70 C 104 74, 106 84, 98 90 C 100 96, 96 104, 88 102"/>
+        <path d="M88 102 C 92 98, 100 92, 106 86 C 112 80, 118 78, 122 70 C 128 62, 136 60, 140 66 C 146 64, 150 70, 146 76 C 150 80, 148 88, 140 88"/>
+        <path d="M140 88 C 136 92, 128 94, 122 92"/>
+        <path d="M136 68 L 143 60"/>
+        <path d="M92 88 L 90 150"/>
+        <path d="M100 92 L 104 150"/>
+        <path d="M42 92 L 38 150"/>
+        <path d="M50 94 L 54 150"/>
+      </g>
+      <circle cx="132" cy="72" r="2.4" fill="#3a2414"/>
+      <!-- Barrel icon -->
+      <g>
+        <ellipse cx="176" cy="150" rx="16" ry="5" fill="#5c2a10" opacity="0.35"/>
+        <rect x="153" y="98" width="46" height="52" rx="9" fill="#b9541f" stroke="#5c2a10" stroke-width="3"/>
+        <rect x="153" y="114" width="46" height="5" fill="#5c2a10"/>
+        <rect x="153" y="134" width="46" height="5" fill="#5c2a10"/>
+        <ellipse cx="176" cy="98" rx="23" ry="7" fill="#d4713a" stroke="#5c2a10" stroke-width="3"/>
+        <rect x="171" y="86" width="10" height="6" rx="2" fill="#5c2a10"/>
+      </g>
+    </symbol>
+
+    <symbol id="icon-barrel-lg" viewBox="0 0 160 200">
+      <ellipse cx="80" cy="184" rx="46" ry="10" fill="#2b1d14" opacity="0.15"/>
+      <rect x="18" y="52" width="124" height="126" rx="20" fill="url(#metalGrad)" stroke="#5c2a10" stroke-width="4"/>
+      <rect x="18" y="86" width="124" height="9" fill="#5c2a10" opacity="0.55"/>
+      <rect x="18" y="140" width="124" height="9" fill="#5c2a10" opacity="0.55"/>
+      <ellipse cx="80" cy="52" rx="62" ry="16" fill="#d4713a" stroke="#5c2a10" stroke-width="4"/>
+      <ellipse cx="80" cy="48" rx="52" ry="12" fill="#e08a4f"/>
+      <rect x="66" y="24" width="28" height="12" rx="5" fill="#5c2a10"/>
+      <circle cx="80" cy="110" r="7" fill="#5c2a10" opacity="0.5"/>
+      <rect x="4" y="98" width="16" height="10" rx="4" fill="#8a4321"/>
+      <rect x="140" y="98" width="16" height="10" rx="4" fill="#8a4321"/>
+      <defs>
+        <linearGradient id="metalGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#c9ccd1"/>
+          <stop offset="0.5" stop-color="#8f949c"/>
+          <stop offset="1" stop-color="#c9ccd1"/>
+        </linearGradient>
+      </defs>
+    </symbol>
+
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Desert Barrel - Inicio">
+      <svg class="brand-logo" viewBox="0 0 220 220"><use href="#logo-badge"/></svg>
+      <span class="brand-text">
+        <strong>DESERT BARREL</strong>
+        <small>UAE · Barriles Asadores Premium</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#como-comprar">Cómo Comprar</a>
+      <a href="#contacto">Contacto</a>
+      <a href="tel:+971123456" class="nav-phone">📞 +971 123456</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <svg class="hero-logo" viewBox="0 0 220 220" aria-hidden="true"><use href="#logo-badge"/></svg>
+    <p class="hero-eyebrow">Hecho para el desierto. Hecho para asar.</p>
+    <h1>El auténtico sabor del desierto,<br>en tu propio barril asador.</h1>
+    <p class="hero-sub">Barriles ahumadores en acero inoxidable, diseñados y ensamblados en Emiratos Árabes Unidos. Del tamaño de mesa al barril grande para toda la familia.</p>
+    <div class="hero-cta">
+      <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+      <a href="#contacto" class="btn btn-ghost">Hablar con Ventas</a>
+    </div>
+    <ul class="hero-badges">
+      <li>🔥 Acero inoxidable calibre grueso</li>
+      <li>🐫 Diseño inspirado en el desierto árabe</li>
+      <li>🚚 Envíos a todo EAU</li>
+      <li>💳 Pago seguro en línea o contra entrega</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CATALOG ============ -->
+<section class="catalog" id="catalogo">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Catálogo piloto</p>
+      <h2>Elige el tamaño de tu Desert Barrel</h2>
+      <p class="section-sub">Todos los precios están expresados en Dirhams de Emiratos Árabes Unidos (AED). Página piloto de demostración — precios sujetos a confirmación final.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card" data-name="Bedouin Mini" data-price="950" data-old-price="1100">
+        <span class="badge-sale">Oferta</span>
+        <div class="product-media size-sm"><svg viewBox="0 0 160 200"><use href="#icon-barrel-lg"/></svg></div>
+        <h3>01.- Bedouin Mini</h3>
+        <p class="product-desc">Barril compacto de mesa, ideal para 2 a 4 personas. Perfecto para terrazas y campamentos en el desierto.</p>
+        <ul class="product-specs">
+          <li>Altura: 45 cm</li>
+          <li>Incluye parrilla y tapa</li>
+          <li>Acero inoxidable</li>
+        </ul>
+        <div class="price-row">
+          <span class="price-old">Dhs. 1,100.00 AED</span>
+          <span class="price-new">Dhs. 950.00 AED</span>
+        </div>
+        <button class="btn btn-primary btn-block btn-buy">Comprar ahora</button>
+      </article>
+
+      <article class="product-card" data-name="Oasis Combo" data-price="1850" data-old-price="2150">
+        <span class="badge-sale">Oferta</span>
+        <div class="product-media size-md"><svg viewBox="0 0 160 200"><use href="#icon-barrel-lg"/></svg></div>
+        <h3>02.- Oasis Combo</h3>
+        <p class="product-desc">Barril mediano con set de 6 accesorios: pinzas, cepillo, guantes, termómetro y más. Listo para disfrutar.</p>
+        <ul class="product-specs">
+          <li>Altura: 65 cm</li>
+          <li>6 accesorios incluidos</li>
+          <li>Acero inoxidable</li>
+        </ul>
+        <div class="price-row">
+          <span class="price-old">Dhs. 2,150.00 AED</span>
+          <span class="price-new">Dhs. 1,850.00 AED</span>
+        </div>
+        <button class="btn btn-primary btn-block btn-buy">Comprar ahora</button>
+      </article>
+
+      <article class="product-card" data-name="Caravan Combo" data-price="2260" data-old-price="2600">
+        <span class="badge-sale">Oferta</span>
+        <div class="product-media size-lg"><svg viewBox="0 0 160 200"><use href="#icon-barrel-lg"/></svg></div>
+        <h3>03.- Caravan Combo</h3>
+        <p class="product-desc">Barril grande con gancho, diez colgadores y funda protectora. La esencia completa del ahumado en barril.</p>
+        <ul class="product-specs">
+          <li>Altura: 85 cm</li>
+          <li>Gancho + 10 colgadores + funda</li>
+          <li>Acero inoxidable</li>
+        </ul>
+        <div class="price-row">
+          <span class="price-old">Dhs. 2,600.00 AED</span>
+          <span class="price-new">Dhs. 2,260.00 AED</span>
+        </div>
+        <button class="btn btn-primary btn-block btn-buy">Comprar ahora</button>
+      </article>
+
+      <article class="product-card" data-name="Sultan XL" data-price="3200" data-old-price="">
+        <div class="product-media size-xl"><svg viewBox="0 0 160 200"><use href="#icon-barrel-lg"/></svg></div>
+        <h3>04.- Sultan XL</h3>
+        <p class="product-desc">Nuestro barril más grande, para negocios y reuniones familiares numerosas. Máxima capacidad de ahumado.</p>
+        <ul class="product-specs">
+          <li>Altura: 105 cm</li>
+          <li>Capacidad extra grande</li>
+          <li>Acero inoxidable reforzado</li>
+        </ul>
+        <div class="price-row">
+          <span class="price-new">Dhs. 3,200.00 AED</span>
+        </div>
+        <button class="btn btn-primary btn-block btn-buy">Comprar ahora</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="nosotros">
+  <div class="container about-inner">
+    <div class="about-text">
+      <p class="eyebrow">Nuestra historia</p>
+      <h2>Diseñados en el desierto, hechos para durar.</h2>
+      <p>Desert Barrel nace en Emiratos Árabes Unidos con una idea simple: llevar el ritual del fuego y el humo a cada casa, restaurante y campamento del país. Cada barril se fabrica en acero inoxidable de calibre grueso, pensado para soportar el calor extremo del Golfo y ofrecer años de uso.</p>
+      <p>Esta es una <strong>página piloto de demostración</strong> — el catálogo, precios y portal de pago son de prueba y sirven para validar la experiencia de compra antes del lanzamiento oficial.</p>
+    </div>
+    <div class="about-media" aria-hidden="true">
+      <svg viewBox="0 0 220 220"><use href="#logo-badge"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW TO BUY / PAYMENTS ============ -->
+<section class="how-to-buy" id="como-comprar">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Portal de pago</p>
+      <h2>Cómo comprar en Desert Barrel</h2>
+      <p class="section-sub">Elige tu barril, completa tus datos de envío y paga de forma segura. Aceptamos las siguientes formas de pago:</p>
+    </div>
+    <div class="pay-methods">
+      <div class="pay-method">
+        <div class="pay-icon">💳</div>
+        <h4>Tarjeta de crédito / débito</h4>
+        <p>Visa, Mastercard y tarjetas locales de EAU.</p>
+      </div>
+      <div class="pay-method">
+        <div class="pay-icon">🏦</div>
+        <h4>Transferencia bancaria</h4>
+        <p>Recibirás los datos bancarios tras confirmar tu pedido.</p>
+      </div>
+      <div class="pay-method">
+        <div class="pay-icon">📦</div>
+        <h4>Pago contra entrega</h4>
+        <p>Paga en efectivo al recibir tu barril en Dubái, Abu Dabi y Sharjah.</p>
+      </div>
+    </div>
+    <p class="demo-note">⚠️ Modo demostración: este portal de pago simula el proceso de compra. No se procesan transacciones reales ni se almacenan datos de tarjeta.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT / CTA ============ -->
+<section class="cta-contact" id="contacto">
+  <div class="container cta-inner">
+    <h2>¿Listo para tu Desert Barrel?</h2>
+    <p>Escríbenos o llámanos y te ayudamos a elegir el tamaño ideal para tu evento.</p>
+    <div class="hero-cta">
+      <a href="tel:+971123456" class="btn btn-primary">📞 Llamar: +971 123456</a>
+      <a href="mailto:info@desertbarrel.ae" class="btn btn-ghost">✉️ info@desertbarrel.ae</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <a href="#top" class="brand">
+        <svg class="brand-logo" viewBox="0 0 220 220"><use href="#logo-badge"/></svg>
+        <span class="brand-text">
+          <strong>DESERT BARREL</strong>
+          <small>UAE · Barriles Asadores Premium</small>
+        </span>
+      </a>
+      <p>Barriles asadores y ahumadores premium, fabricados para el clima y el estilo de vida de Emiratos Árabes Unidos.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#como-comprar">Cómo comprar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul class="contact-list">
+        <li><strong>Atención al cliente:</strong> Marco Toala</li>
+        <li>📞 <a href="tel:+971123456">+971 123456</a></li>
+        <li>✉️ <a href="mailto:info@desertbarrel.ae">info@desertbarrel.ae</a></li>
+        <li>📍 Dubái, Emiratos Árabes Unidos</li>
+        <li>🌐 <a href="https://www.desertbarrel.ae" target="_blank" rel="noopener">www.desertbarrel.ae</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Desert Barrel. Todos los derechos reservados. · Página piloto de demostración.</p>
+  </div>
+</footer>
+
+<!-- Floating quick-call button -->
+<a href="tel:+971123456" class="fab-call" aria-label="Llamar a Desert Barrel">📞</a>
+
+<!-- ============ CHECKOUT MODAL (Payment Portal) ============ -->
+<div class="modal-overlay" id="checkoutModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+
+    <!-- Step 1: order + shipping + payment form -->
+    <div id="modalForm">
+      <h3 id="modalTitle">Portal de Pago Seguro</h3>
+      <p class="modal-sub">Estás comprando: <strong id="sumProduct">—</strong></p>
+
+      <div class="order-summary">
+        <div class="qty-row">
+          <span>Cantidad</span>
+          <div class="qty-stepper">
+            <button type="button" id="qtyMinus" aria-label="Restar">−</button>
+            <span id="qtyValue">1</span>
+            <button type="button" id="qtyPlus" aria-label="Sumar">+</button>
+          </div>
+        </div>
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="sumTotal">Dhs. 0.00 AED</strong>
+        </div>
+      </div>
+
+      <form id="checkoutForm">
+        <fieldset>
+          <legend>Datos de envío</legend>
+          <div class="form-row">
+            <label>Nombre completo
+              <input type="text" name="fullname" required placeholder="Tu nombre">
+            </label>
+            <label>Correo electrónico
+              <input type="email" name="email" required placeholder="tucorreo@email.com">
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Teléfono
+              <input type="tel" name="phone" required placeholder="+971 5X XXX XXXX">
+            </label>
+            <label>Emirato
+              <select name="emirate" required>
+                <option value="">Selecciona...</option>
+                <option>Dubái</option>
+                <option>Abu Dabi</option>
+                <option>Sharjah</option>
+                <option>Ajman</option>
+                <option>Ras Al Khaimah</option>
+                <option>Fujairah</option>
+                <option>Umm Al Quwain</option>
+              </select>
+            </label>
+          </div>
+          <label>Dirección de entrega
+            <input type="text" name="address" required placeholder="Calle, edificio, número de villa/apto">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Método de pago</legend>
+          <div class="pay-options">
+            <label class="radio-card">
+              <input type="radio" name="paymethod" value="card" checked>
+              <span>💳 Tarjeta</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="paymethod" value="cod">
+              <span>📦 Contra entrega</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="paymethod" value="transfer">
+              <span>🏦 Transferencia</span>
+            </label>
+          </div>
+
+          <div id="cardFields" class="card-fields">
+            <label>Nombre en la tarjeta
+              <input type="text" name="cardname" placeholder="Como aparece en la tarjeta">
+            </label>
+            <label>Número de tarjeta
+              <input type="text" name="cardnumber" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000">
+            </label>
+            <div class="form-row">
+              <label>Vencimiento
+                <input type="text" name="cardexpiry" maxlength="5" placeholder="MM/AA">
+              </label>
+              <label>CVV
+                <input type="text" name="cardcvv" inputmode="numeric" maxlength="4" placeholder="123">
+              </label>
+            </div>
+            <p class="secure-note">🔒 Conexión simulada y cifrada — página de demostración, no se realizan cargos reales.</p>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-block" id="payButton">Pagar ahora</button>
+      </form>
+    </div>
+
+    <!-- Step 2: processing -->
+    <div id="modalProcessing" class="modal-state" hidden>
+      <div class="spinner"></div>
+      <p>Procesando tu pago de forma segura...</p>
+    </div>
+
+    <!-- Step 3: success -->
+    <div id="modalSuccess" class="modal-state" hidden>
+      <div class="success-icon"><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg></div>
+      <h3>¡Pedido confirmado!</h3>
+      <p>Gracias por tu compra. Tu número de orden es:</p>
+      <p class="order-id" id="orderId">DB-000000</p>
+      <p>Marco Toala se pondrá en contacto contigo al número indicado para coordinar la entrega.</p>
+      <button type="button" class="btn btn-primary btn-block" id="modalDone">Listo</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
