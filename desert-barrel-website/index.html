@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="meta.title">Desert Barrel | Premium BBQ Smoker Barrels — United Arab Emirates</title>
 <meta name="description" id="metaDescription" content="Desert Barrel: premium stainless steel smoker barrels. Delivery across the United Arab Emirates. Prices in AED.">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -13,34 +13,6 @@
 <!-- ============ SVG SPRITES (logo, barrel icon, etc. reused via <use>) ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <symbol id="logo-badge" viewBox="0 0 220 220">
-      <circle cx="110" cy="110" r="104" fill="#ecd9b3" stroke="#b9852f" stroke-width="5"/>
-      <circle cx="163" cy="54" r="13" fill="#d4a84b" opacity="0.9"/>
-      <path d="M28 156 C 60 145, 95 145, 110 152 C 130 160, 165 160, 192 150" fill="none" stroke="#c9ad7c" stroke-width="4" stroke-linecap="round"/>
-      <!-- Camel line-art -->
-      <g fill="none" stroke="#3a2414" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M34 100 C 28 109, 26 119, 31 128"/>
-        <path d="M34 100 C 40 90, 46 90, 50 84 C 55 70, 62 62, 68 66 C 71 56, 80 52, 84 60 C 90 56, 98 60, 96 70 C 104 74, 106 84, 98 90 C 100 96, 96 104, 88 102"/>
-        <path d="M88 102 C 92 98, 100 92, 106 86 C 112 80, 118 78, 122 70 C 128 62, 136 60, 140 66 C 146 64, 150 70, 146 76 C 150 80, 148 88, 140 88"/>
-        <path d="M140 88 C 136 92, 128 94, 122 92"/>
-        <path d="M136 68 L 143 60"/>
-        <path d="M92 88 L 90 150"/>
-        <path d="M100 92 L 104 150"/>
-        <path d="M42 92 L 38 150"/>
-        <path d="M50 94 L 54 150"/>
-      </g>
-      <circle cx="132" cy="72" r="2.4" fill="#3a2414"/>
-      <!-- Barrel icon -->
-      <g>
-        <ellipse cx="176" cy="150" rx="16" ry="5" fill="#5c2a10" opacity="0.35"/>
-        <rect x="153" y="98" width="46" height="52" rx="9" fill="#b9541f" stroke="#5c2a10" stroke-width="3"/>
-        <rect x="153" y="114" width="46" height="5" fill="#5c2a10"/>
-        <rect x="153" y="134" width="46" height="5" fill="#5c2a10"/>
-        <ellipse cx="176" cy="98" rx="23" ry="7" fill="#d4713a" stroke="#5c2a10" stroke-width="3"/>
-        <rect x="171" y="86" width="10" height="6" rx="2" fill="#5c2a10"/>
-      </g>
-    </symbol>
-
     <symbol id="icon-check" viewBox="0 0 24 24">
       <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
@@ -51,7 +23,7 @@
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a href="#top" class="brand" aria-label="Desert Barrel - Home">
-      <svg class="brand-logo" viewBox="0 0 220 220"><use href="#logo-badge"/></svg>
+      <img class="brand-logo" src="assets/logo.png" alt="Desert Barrel logo">
       <span class="brand-text">
         <strong>DESERT BARREL</strong>
         <small data-i18n="brand.tagline">UAE · Premium BBQ Smoker Barrels</small>
@@ -82,7 +54,7 @@
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="container hero-inner">
-    <svg class="hero-logo" viewBox="0 0 220 220" aria-hidden="true"><use href="#logo-badge"/></svg>
+    <img class="hero-logo" src="assets/logo.png" alt="" aria-hidden="true">
     <p class="hero-eyebrow" data-i18n="hero.eyebrow">Made for the desert. Made for grilling.</p>
     <h1 data-i18n-html="hero.title">The authentic taste of the desert,<br>in your own smoker barrel.</h1>
     <p class="hero-sub" data-i18n="hero.subtitle">Stainless steel smoker barrels, designed and assembled in the United Arab Emirates. From tabletop size to the big barrel for the whole family.</p>
@@ -180,6 +152,26 @@
   </div>
 </section>
 
+<!-- ============ LIFESTYLE ============ -->
+<section class="lifestyle">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="lifestyle.eyebrow">Real moments</p>
+      <h2 data-i18n="lifestyle.title">Made to gather people around the fire</h2>
+    </div>
+    <div class="lifestyle-grid">
+      <figure class="lifestyle-item">
+        <img src="assets/lifestyle/hook-meat.jpg" alt="Smoked meat lifted from a Desert Barrel">
+        <figcaption data-i18n="lifestyle.caption1">Low and slow smoking, straight off the hook.</figcaption>
+      </figure>
+      <figure class="lifestyle-item">
+        <img src="assets/lifestyle/family-gathering.jpg" alt="Friends and family gathered around a Desert Barrel">
+        <figcaption data-i18n="lifestyle.caption2">Every barrel is built for sharing.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- ============ ABOUT ============ -->
 <section class="about" id="nosotros">
   <div class="container about-inner">
@@ -190,7 +182,7 @@
       <p data-i18n-html="about.p2">This is a <strong>pilot demo page</strong> — the catalog, prices and payment portal are for testing purposes, used to validate the shopping experience ahead of the official launch.</p>
     </div>
     <div class="about-media" aria-hidden="true">
-      <svg viewBox="0 0 220 220"><use href="#logo-badge"/></svg>
+      <img src="assets/logo.png" alt="">
     </div>
   </div>
 </section>
@@ -241,7 +233,7 @@
   <div class="container footer-grid">
     <div class="footer-col footer-brand">
       <a href="#top" class="brand">
-        <svg class="brand-logo" viewBox="0 0 220 220"><use href="#logo-badge"/></svg>
+        <img class="brand-logo" src="assets/logo.png" alt="Desert Barrel logo">
         <span class="brand-text">
           <strong>DESERT BARREL</strong>
           <small data-i18n="brand.tagline">UAE · Premium BBQ Smoker Barrels</small>
