@@ -10,6 +10,12 @@ localmente antes de contratar hosting definitivo.
 
 ## Contenido
 
+- **Idiomas**: selector de idioma en el header (English / العربية / Español).
+  **Inglés es el idioma principal** (predeterminado), seguido de árabe y
+  español. El árabe activa automáticamente diseño RTL (de derecha a
+  izquierda). La preferencia de idioma se guarda en el navegador
+  (`localStorage`) y persiste entre visitas. Las traducciones viven en
+  `js/i18n.js`.
 - **Header**: logo (camel + barril) y navegación.
 - **Hero**: mensaje principal y llamados a la acción.
 - **Catálogo**: 4 tamaños de barril asador con precios en AED

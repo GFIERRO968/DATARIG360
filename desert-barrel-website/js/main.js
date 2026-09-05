@@ -31,16 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentProduct = { name: '', price: 0 };
   let qty = 1;
-
-  function formatAED(amount) {
-    return 'Dhs. ' + amount.toLocaleString('en-US', { minimumFractionDigits: 2 }) + ' AED';
-  }
+  const i18n = window.DesertBarrelI18N;
 
   function updateSummary() {
     sumProduct.textContent = currentProduct.name;
-    sumTotal.textContent = formatAED(currentProduct.price * qty);
+    sumTotal.textContent = i18n.formatPrice(currentProduct.price * qty, i18n.getLang());
     qtyValue.textContent = qty;
   }
+
+  document.addEventListener('db:languagechange', () => {
+    if (modal.classList.contains('open')) updateSummary();
+  });
 
   function openModal(product) {
     currentProduct = product;
@@ -122,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedMethod === 'card') {
       const digits = cardNumberInput.value.replace(/\D/g, '');
       if (digits.length < 12 || !cardExpiryInput.value.includes('/') || cardCvvInput.value.length < 3) {
-        alert('Por favor completa correctamente los datos de la tarjeta (demo).');
+        alert(i18n.t('modal.card.invalid', i18n.getLang()));
         return;
       }
     }

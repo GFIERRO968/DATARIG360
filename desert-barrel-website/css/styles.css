@@ -25,12 +25,17 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+  font-family: "Segoe UI", "Tahoma", "Trebuchet MS", "Arial", sans-serif;
   background: var(--bg);
   color: var(--text-light);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+
+/* ---------- RTL (Arabic) fixes for absolutely-positioned elements ---------- */
+[dir="rtl"] .badge-sale { left: auto; right: 16px; }
+[dir="rtl"] .fab-call { right: auto; left: 22px; }
+[dir="rtl"] .modal-close { right: auto; left: 14px; }
 
 h1, h2, h3, h4 {
   font-family: Georgia, "Times New Roman", serif;
@@ -138,6 +143,33 @@ img, svg { display: block; max-width: 100%; }
   padding: 0.5em 1em;
   border-radius: 999px;
   color: var(--gold) !important;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 2px;
+  background: rgba(212,168,75,0.1);
+  border: 1px solid rgba(212,168,75,0.25);
+  padding: 3px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+.lang-switch button {
+  border: none;
+  background: transparent;
+  color: var(--sand-dim);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.4em 0.75em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.lang-switch button:hover { color: var(--gold); }
+.lang-switch button.active {
+  background: var(--rust);
+  color: #fff;
 }
 
 .nav-toggle {
@@ -571,4 +603,6 @@ input:focus, select:focus { outline: none; border-color: var(--gold); }
   .nav-toggle { display: flex; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .brand-text small { display: none; }
+  .lang-switch button { padding: 0.35em 0.55em; font-size: 0.68rem; }
 }
