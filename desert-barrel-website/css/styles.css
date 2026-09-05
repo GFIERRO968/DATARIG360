@@ -276,17 +276,22 @@ img, svg { display: block; max-width: 100%; }
   z-index: 2;
 }
 .product-media {
-  height: 170px;
+  height: 200px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   margin-bottom: 14px;
+  background: linear-gradient(180deg, var(--sand), var(--sand-dim));
+  border-radius: 10px;
+  overflow: hidden;
 }
-.product-media svg { height: 100%; }
-.product-media.size-sm svg { height: 55%; }
-.product-media.size-md svg { height: 72%; }
-.product-media.size-lg svg { height: 90%; }
-.product-media.size-xl svg { height: 100%; }
+.product-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
 .product-card h3 { font-size: 1.15rem; margin-bottom: 0.3em; }
 .product-desc { color: var(--sand-dim); font-size: 0.92rem; }
 .product-specs {
