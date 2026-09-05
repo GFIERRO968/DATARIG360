@@ -30,7 +30,7 @@ localmente antes de contratar hosting definitivo.
   todos con presencia en EAU).
 - **Footer**: datos de contacto —
   - Atención al cliente: **Marco Toala**
-  - Teléfono: **+971 123456**
+  - Teléfono: **+971 58 508 2518**
   - Correo: **info@desertbarrel.ae**
   - Dominio propuesto: **www.desertbarrel.ae** *(dominio ficticio para la
     demo — debe registrarse formalmente antes de usarse en producción)*
